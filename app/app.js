@@ -4,11 +4,13 @@
 // But how to include a file from local?
 
 
-//Docker friendly: the container named "eth" is our target to explorer
-var GETH_HOSTNAME	= "eth";	// put your IP address!
-var APP_HOSTNAME 	= "See package.json --> scripts --> start: Change 'localhost'!!!";
+//Moved to config.js
+//config.js must be loaded before the app.js in index.html
+//
+//var GETH_HOSTNAME	= "localhost";	// put your IP address!
+//var GETH_RPCPORT  	= 8545; 		// for geth --rpcport GETH_RPCPORT
 
-var GETH_RPCPORT  	= 8545; 		// for geth --rpcport GETH_RPCPORT
+var APP_HOSTNAME 	= "See package.json --> scripts --> start: Change 'localhost'!!!";
 var APP_PORT 		= "See package.json --> scripts --> start: Perhaps change '8000'";
 
 // this is creating the corrected geth command
